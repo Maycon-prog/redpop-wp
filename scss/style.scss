@@ -6,12 +6,37 @@
     display: flex !important;
     align-items: center;
 }
+
+body {
+    background-color: var(--fundo);
+}
+
+.banner {
+    background-color: var(--banner) !important;
+
+    button {
+        background-color: var(--botao) !important;
+    }
+}
+
+#conteudo {
+    background-color: var(--fundo);
+    
+    h2 {
+        color: var(--titulo) !important;
+    }
+
+    p {
+        color: var(--texto);
+    }
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 @media (min-width: 576px) {
     .container {

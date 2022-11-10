@@ -1,5 +1,8 @@
 :root {
-    --nav: #C7263F;
+    --banner: #03645B;
+    --titulo: #03645B;
+    --texto: #545454;
+    --botao: #EB570D;
     --slide: #ED5555;
     --botoes-slide: #CC3A46;
     --link: #0377FF;
@@ -12,7 +15,10 @@
 }
 
 .dark-mode:root {
-    --nav: #000;
+    --banner: #000;
+    --titulo: #FFF;
+    --texto: #FFF;
+    --botao: #000;
     --slide: #000;
     --botoes-slide: #000;
     --link: #FFF;
