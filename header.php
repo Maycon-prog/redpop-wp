@@ -48,21 +48,21 @@
                             <div class="bar3"></div>
                         </div>
                     </button>
-                    <h1 class="legenda-header">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h1>
+                    <nav class="nav-menu">
+                        <div class="container">
+                            <?php
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'main_menu', // identificador do menu
+                                    'depth' => 1 // limita submenus
+                                )
+                            )
+                            ?>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <nav class="nav-menu">
-                <div class="container">
-                    <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'main_menu', // identificador do menu
-                            'depth' => 1 // limita submenus
-                        )
-                    )
-                    ?>
-                </div>
-            </nav>
+
 
 
 
@@ -96,4 +96,7 @@
                 </div>
             </div>
         </header>
+        <?php if (!is_front_page()) {
+            the_title();
+        } ?>
         <noscript>Essa página precisa de javascript para funcionar!</noscript>
