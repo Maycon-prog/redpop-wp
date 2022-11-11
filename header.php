@@ -28,19 +28,15 @@
                         <i class="icon bi bi-circle-half"></i>
                         <a onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
                     </div>
+                    <div class="div-options d-flex">
+                        <a class="PT" accesskey="2"><strong>PT</strong></a>
+                        |
+                        <a class="ES" accesskey="2"><strong>ES</strong></a>
+                    </div>
                 </div>
                 <div class="menu-header">
-                    <div class="logo-menu">
-                        <?php
-                        if (has_custom_logo()) {
-                            the_custom_logo();
-                        } else {
-                        ?>
-                            <a href="<?php echo home_url('/') ?>"><span><?php bloginfo('name') ?></span></a>
-                        <?php
-                        }
-                        ?>
-                    </div>
+                    <img id="logo" src="http://redpop.local/wp-content/uploads/2022/11/cropped-XVII-Congresso REDPOP-2023 RIO-DE-JANEIRO.png" alt="XVII Congresso REDPOP 2023 Rio de Janeiro">
+                    <img id="logo-contraste" src="http://redpop.local/wp-content/uploads/2022/11/XVII-Congresso REDPOP-2023 RIO-DE-JANEIRO-Branco.png" alt="XVII Congresso REDPOP 2023 Rio de Janeiro">
                     <button onclick="button_menu('open');" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
@@ -68,7 +64,6 @@
 
             <div id="menu-mobile">
                 <button onclick="button_menu('close');" class="close-button"><i class="bi bi-x-circle"></i></button>
-                <h2 class="legenda-mobile">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h2>
                 <div class="menu-header-mobile">
                     <nav class="nav-menu-mobile">
                         <?php
@@ -96,7 +91,13 @@
                 </div>
             </div>
         </header>
-        <?php if (!is_front_page()) {
-            the_title();
-        } ?>
+        <?php
+        if (!is_front_page()) {
+        ?>
+            <div class="title-pages">
+                <?php echo get_the_title(); ?>
+            </div>
+        <?php
+        }
+        ?>
         <noscript>Essa página precisa de javascript para funcionar!</noscript>
