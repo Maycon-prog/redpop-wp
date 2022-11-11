@@ -1,7 +1,9 @@
 @import 'variables.scss';
-*{
+
+* {
     margin: 0;
 }
+
 .d-flex {
     display: flex !important;
     align-items: center;
@@ -30,16 +32,22 @@ body {
     }
 }
 
-#conteudo {
-    background-color: var(--fundo);
-    
-    h2 {
-        color: var(--titulo) !important;
-    }
-
-    p {
-        color: var(--texto);
-    }
+footer{
+    box-shadow: 0px -4px 4px rgb(0 0 0 / 15%);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-footer{
+    margin: 10px;
+}
+.realizacao, .apoio{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container {
@@ -47,8 +55,9 @@ body {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -74,13 +83,73 @@ body {
     }
 }
 
-
-.texto{
-    font-size: var(--tamanhoTexto);
+.title-pages {
+    width: 100%;
+    background-color: var(--banner);
+    background-image: url('http://redpop.local/wp-content/uploads/2022/11/Frame.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: "Cabin", Sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
 }
-h2{
+
+.list {
+    font-family: "Cabin", Sans-serif;
+    text-align: left;
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    b {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        color: var(--hover);
+    }
+}
+
+label{
+    color: var(--titulo);
+}
+.botaoNinja{
+    background-color: var(--botao) !important;
+    padding: 12px 24px !important;
+}
+
+.hr-list{
+    border-color: var(--texto);
+}
+
+.h2>div>h2 {
+    font-size: var(--tamanhoTitulo) !important;
+    color: var(--titulo) !important;
+}
+
+.PT,
+.ES {
+    margin: 5px;
+}
+
+.h2-branco>div>h2 {
     font-size: var(--tamanhoTitulo) !important;
 }
+
+.texto, .texto>div{
+    color: var(--texto);
+    font-size: var(--tamanhoTexto);
+
+}
+
+#logo-contraste {
+    display: none;
+}
+
 header {
     width: 100%;
     background-color: var(--fundo);
@@ -95,9 +164,9 @@ header {
 
         .div-options {
             padding: 5px 10px;
-            border-left: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            border-right: 1px solid #ccc;
+            border-left: 1px solid var(--options);
+            border-bottom: 1px solid var(--options);
+            border-right: 1px solid var(--options);
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             background-color: var(--fundo);
@@ -105,13 +174,14 @@ header {
 
             a {
                 text-decoration: none;
-                color: var(--link);
+                color: var(--options);
             }
 
             strong {
-                color: var(--texto);
+                color: var(--options);
                 text-transform: uppercase;
                 font-size: 0.75rem;
+                cursor: pointer;
             }
 
             .sub-font {
@@ -138,6 +208,7 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                color: var(--options);
             }
         }
     }
@@ -148,15 +219,6 @@ header {
         align-items: flex-end;
         justify-content: space-between;
         padding: 1rem 0;
-
-        .logo-menu {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .legenda-header{
-            font-size: 1rem;
-        }
     }
 
     .menu {
@@ -170,15 +232,15 @@ header {
 
         li {
             a {
-                margin-left: 10px;
+                margin-left: 70px;
                 text-decoration: none;
-                color: #545454;
+                color: var(--texto);
                 text-transform: uppercase;
                 font-family: 'Roboto';
             }
 
             a:hover {
-                text-decoration: underline;
+                color: var(--hover);
             }
         }
     }
@@ -207,7 +269,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
-    padding: 20px; 
+    padding: 20px;
     z-index: 1001;
     display: none;
 
@@ -215,19 +277,13 @@ header {
         float: right;
         background-color: transparent;
         border: none;
-        color: #fff;
+        color: var(--texto);
         font-size: 30px;
         cursor: pointer;
 
         i {
             font-size: 2rem;
         }
-    }
-
-    .legenda-mobile {
-        text-align: center;
-        color: #fff;
-        margin-top: 4.5rem;
     }
 
     .nav-menu-mobile>.menu-header-menu-container>.menu {
@@ -238,11 +294,12 @@ header {
         margin-top: 2rem;
         margin-bottom: 1rem;
         gap: .5rem;
+        width: 100%;
 
         li>a {
             margin-left: 0px;
             text-decoration: none;
-            color: #fff;
+            color: var(--texto);
             font-size: 1.5rem;
         }
     }
@@ -256,7 +313,7 @@ header {
 
         .div-options-mobile {
             padding: 5px 10px;
-            border: 1px solid #ccc;
+            border: 1px solid var(--texto);
             border-radius: 12px;
             background-color: var(--fundo);
             margin-right: 0.5rem !important;
@@ -318,21 +375,19 @@ header {
     }
 
     .nav-menu,
-    .options-header{
+    .options-header {
         display: none !important;
     }
-    .menu-header{
+
+    .menu-header {
         justify-content: flex-end;
     }
-    .legenda-header{
-        display: none !important; 
-    }
 
-    .nav-menu-mobile > .menu-header-menu-container > .menu{
+    .nav-menu-mobile>.menu-header-menu-container>.menu {
         flex-direction: column !important;
     }
 
-    .relacionado{
+    .relacionado {
         flex-wrap: wrap !important;
     }
 }

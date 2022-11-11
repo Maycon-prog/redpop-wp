@@ -9,7 +9,9 @@
     --footer: #393939;
     --texto: #000;
     --fundo: #FFF;
-
+    --nav: #fff;
+    --hover: #EB570D;
+    --options: #036459;
     --tamanhoTexto: 1rem;
     --tamanhoTitulo: 2rem;
 }
@@ -25,6 +27,25 @@
     --footer: #000;
     --texto: #FFF;
     --fundo: #000;
+    --nav: #000;
+    --hover: #fff;
+    --options: #fff;
+
+    i{
+        color: #fff;
+    }
+
+    .elementor-button-link {
+        border: 1px solid #fff;
+        background-color: var(--botao) !important;
+    }
+
+    header{
+        border: 1px solid #fff;
+    }
+    section{
+        border: 1px solid #fff;
+    }
 }
 
 .diminuiu:root {
