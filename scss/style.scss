@@ -14,7 +14,7 @@ body {
 }
 
 .botaoNinja {
-    background-color:  var(--botao) !important;
+    background-color: var(--botao) !important;
     padding: 0 5rem !important;
     font-weight: 700 !important;
     color: #FFF;
@@ -24,6 +24,8 @@ body {
     }
 }
 
+
+
 .banner {
     background-color: var(--banner) !important;
 
@@ -32,17 +34,24 @@ body {
     }
 }
 
-footer{
+footer {
     box-shadow: 0px -4px 4px rgb(0 0 0 / 15%);
     padding: 25px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.img-footer{
+
+.img-footer {
     margin: 10px;
 }
-.realizacao, .apoio{
+
+.green{
+    color: var(--titulo);
+}
+
+.realizacao,
+.apoio {
     min-height: 100px;
     display: flex;
     align-items: center;
@@ -114,15 +123,16 @@ footer{
     }
 }
 
-label{
+label {
     color: var(--titulo);
 }
-.botaoNinja{
+
+.botaoNinja {
     background-color: var(--botao) !important;
     padding: 12px 24px !important;
 }
 
-.hr-list{
+.hr-list {
     border-color: var(--texto);
 }
 
@@ -140,7 +150,8 @@ label{
     font-size: var(--tamanhoTitulo) !important;
 }
 
-.texto, .texto>div{
+.texto,
+.texto>div {
     color: var(--texto);
     font-size: var(--tamanhoTexto);
 
@@ -178,10 +189,12 @@ header {
             }
 
             strong {
-                color: var(--options);
                 text-transform: uppercase;
                 font-size: 0.75rem;
-                cursor: pointer;
+            }
+            a:hover{
+                color: var(--hover);
+                text-decoration: underline;
             }
 
             .sub-font {
@@ -219,6 +232,18 @@ header {
         align-items: flex-end;
         justify-content: space-between;
         padding: 1rem 0;
+
+        h1 {
+            font-family: "Cabin", Sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: var(--titulo) !important;
+            b{
+                color: var(--redpop);
+            }
+        }
     }
 
     .menu {
@@ -241,6 +266,7 @@ header {
 
             a:hover {
                 color: var(--hover);
+                text-decoration: underline;
             }
         }
     }
@@ -302,6 +328,22 @@ header {
             color: var(--texto);
             font-size: 1.5rem;
         }
+        li {
+            a {
+                margin-left: 0px;
+                text-decoration: none;
+                color: var(--texto);
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-family: "Cabin", Sans-serif;
+            }
+
+            a:hover {
+                color: var(--hover);
+                text-decoration: underline;
+            }
+            
+        }
     }
 
     .options-header-mobile {
@@ -321,12 +363,16 @@ header {
 
             a {
                 text-decoration: none;
+                color: var(--options);
             }
 
             strong {
-                color: var(--texto);
                 text-transform: uppercase;
-                font-size: 0.75rem;
+                font-size: 1.2rem;
+            }
+            a:hover{
+                color: var(--hover);
+                text-decoration: underline;
             }
 
             .sub-font {
@@ -353,6 +399,7 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                color: var(--options);
             }
         }
     }

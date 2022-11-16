@@ -19,7 +19,7 @@
                         <a href="#conteudo" accesskey="1"><strong>Pular para conteúdo [1]</strong></a>
                     </div>
                     <div class="div-options">
-                        <strong>Texto</strong>
+                        <strong class="green">Texto</strong>
                         <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
                         <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey="0">A</a>
                         <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
@@ -35,8 +35,11 @@
                     </div>
                 </div>
                 <div class="menu-header">
-                    <img id="logo" src="http://redpop.local/wp-content/uploads/2022/11/cropped-XVII-Congresso REDPOP-2023 RIO-DE-JANEIRO.png" alt="XVII Congresso REDPOP 2023 Rio de Janeiro">
-                    <img id="logo-contraste" src="http://redpop.local/wp-content/uploads/2022/11/XVII-Congresso REDPOP-2023 RIO-DE-JANEIRO-Branco.png" alt="XVII Congresso REDPOP 2023 Rio de Janeiro">
+                    <h1>
+                        XVII Congresso<br>
+                        <b>REDPOP 2023</b><br>
+                        RIO DE JANEIRO
+                    </h1>
                     <button onclick="button_menu('open');" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
@@ -78,15 +81,20 @@
                 </div>
 
                 <div class="options-header-mobile">
-                    <div class="div-options-mobile">
-                        <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
+                <div class="div-options-mobile">
+                        <strong class="green">Texto</strong>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey="0">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
+                        <a href="#" onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
+                    </div>
+                    <div class="div-options-mobile d-flex">
+                        <a href="#" class="PT" accesskey="2"><strong>PT</strong></a>
+                        |
+                        <a href="#" class="ES" accesskey="2"><strong>ES</strong></a>
                     </div>
                 </div>
             </div>
