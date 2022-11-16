@@ -249,15 +249,14 @@ header {
     }
 
     .menu {
-        display: flex;
-        list-style-type: none;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding: 5px 0px;
-        margin-top: 8px;
-        margin-bottom: -1px;
-
         ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 5px 0px;
+            margin-top: 8px;
+            margin-bottom: -1px;
             li {
                 a {
                     margin-left: 70px;
