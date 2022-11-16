@@ -257,6 +257,7 @@ header {
             padding: 5px 0px;
             margin-top: 8px;
             margin-bottom: -1px;
+
             li {
                 a {
                     margin-left: 70px;
@@ -317,38 +318,40 @@ header {
     }
 
     .nav-menu-mobile>.menu-header-menu-container>.menu {
-        display: flex;
-        list-style-type: none;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        gap: .5rem;
-        width: 100%;
-
-        li>a {
-            margin-left: 0px;
-            text-decoration: none;
-            color: var(--texto);
-            font-size: 1.5rem;
-        }
-
-        li {
-            a {
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            gap: .5rem;
+            width: 100%;
+            li>a {
                 margin-left: 0px;
                 text-decoration: none;
                 color: var(--texto);
                 font-size: 1.5rem;
-                text-transform: uppercase;
-                font-family: "Cabin", Sans-serif;
             }
 
-            a:hover {
-                color: var(--hover);
-                text-decoration: underline;
-            }
+            li {
+                a {
+                    margin-left: 0px;
+                    text-decoration: none;
+                    color: var(--texto);
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    font-family: "Cabin", Sans-serif;
+                }
 
+                a:hover {
+                    color: var(--hover);
+                    text-decoration: underline;
+                }
+
+            }
         }
+
     }
 
     .options-header-mobile {
