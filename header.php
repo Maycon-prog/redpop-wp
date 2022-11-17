@@ -29,6 +29,7 @@
                         <a href="#" onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
                     </div>
                     <div class="div-options d-flex">
+                    <ul><?php pll_the_languages();?></ul>
                         <a href="#" class="PT"><strong>PT</strong></a>
                         |
                         <a href="#" class="ES"><strong>ES</strong></a>
