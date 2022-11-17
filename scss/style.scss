@@ -307,7 +307,7 @@ header {
         }
     }
 
-    .nav-menu-mobile>.menu-header-menu-container>.menu {
+    .nav-menu-mobile>.menu-header-menu-container, .menu-header-menu-es-container>.menu {
         display: flex;
         list-style-type: none;
         flex-direction: column;
