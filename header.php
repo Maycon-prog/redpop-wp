@@ -29,9 +29,10 @@
                         <a href="#" onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
                     </div>
                     <div class="div-options d-flex">
-                        <a href="#" class="PT"><strong>PT</strong></a>
+                    <?php $translations = pll_the_languages(array( 'raw' => 1 )); ?>
+                        <a href="<?=$translations['pt']['url']?>" class="PT"><strong>PT</strong></a>
                         |
-                        <a href="#" class="ES"><strong>ES</strong></a>
+                        <a href="<?=$translations['es']['url']?>" class="ES"><strong>ES</strong></a>
                     </div>
                 </div>
                 <div class="menu-header">
@@ -92,9 +93,9 @@
                         <a href="#" onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
                     </div>
                     <div class="div-options-mobile d-flex">
-                        <a href="#" class="PT"><strong>PT</strong></a>
+                        <a href="<?=$translations['pt']['url']?>" class="PT"><strong>PT</strong></a>
                         |
-                        <a href="#" class="ES"><strong>ES</strong></a>
+                        <a href="<?=$translations['es']['url']?>" class="ES"><strong>ES</strong></a>
                     </div>
                 </div>
             </div>

@@ -95,7 +95,7 @@ footer {
 .title-pages {
     width: 100%;
     background-color: var(--banner);
-    background-image: url('http://redpop.local/wp-content/uploads/2022/11/Frame.png');
+    background-image: url('http://3.238.63.158/wp-content/uploads/2022/11/Frame.png');
     background-repeat: no-repeat;
     background-position: top right;
     padding: 30px;
@@ -125,11 +125,6 @@ footer {
 
 label {
     color: var(--titulo);
-}
-
-.botaoNinja {
-    background-color: var(--botao) !important;
-    padding: 12px 24px !important;
 }
 
 .hr-list {
@@ -312,7 +307,7 @@ header {
         }
     }
 
-    .nav-menu-mobile>.menu-header-menu-container>.menu {
+    .nav-menu-mobile>.menu-header-menu-container, .menu-header-menu-es-container>.menu {
         display: flex;
         list-style-type: none;
         flex-direction: column;
