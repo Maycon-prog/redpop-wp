@@ -30,7 +30,7 @@
                     </div>
                     <div class="div-options d-flex">
                     <?php $translations = pll_the_languages(array( 'raw' => 1 )); 
-                        print_r($translations[0]);
+                        print_r($translations);
                     ?>
                         <a href="#" class="PT"><strong>PT</strong></a>
                         |
