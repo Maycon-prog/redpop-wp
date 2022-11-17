@@ -93,9 +93,9 @@
                         <a href="#" onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
                     </div>
                     <div class="div-options-mobile d-flex">
-                        <a href="#" class="PT"><strong>PT</strong></a>
+                        <a href="<?=$translations['pt']['url']?>" class="PT"><strong>PT</strong></a>
                         |
-                        <a href="#" class="ES"><strong>ES</strong></a>
+                        <a href="<?=$translations['es']['url']?>" class="ES"><strong>ES</strong></a>
                     </div>
                 </div>
             </div>
