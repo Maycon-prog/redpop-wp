@@ -36,8 +36,8 @@
                     </div>
                 </div>
                 <div class="menu-header">
-                    <img id="logo" src="http://redpop.local/wp-content/uploads/2022/11/cropped-XVII-Congresso REDPOP-2023 RIO-DE-JANEIRO.png" alt="XVII Congresso REDPOP 2023 Rio de Janeiro">
-                    <img id="logo-contraste" src="http://redpop.local/wp-content/uploads/2022/11/XVII-Congresso REDPOP-2023 RIO-DE-JANEIRO-Branco.png" alt="XVII Congresso REDPOP 2023 Rio de Janeiro">
+                    <img id="logo" src="http://3.238.63.158/wp-content/uploads/2022/11/logo-redpop2023.png">
+                    <img id="logo-contraste" src="http://3.238.63.158/wp-content/uploads/2022/11/logo-redpop2023-contraste.png">
                     <button onclick="button_menu('open');" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
