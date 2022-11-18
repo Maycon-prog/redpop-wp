@@ -30,9 +30,9 @@
                     </div>
                     <div class="div-options d-flex">
                         <?php $translations = pll_the_languages(array('raw' => 1)); ?>
-                        <a href="<?= $translations['pt']['url'] ?>" class="PT <?php $translations['pt']['current_lang'] ? "current_lang" : ""; ?>"><strong>PT</strong></a>
+                        <a href="<?= $translations['pt']['url'] ?>" class="PT <?php echo $translations['pt']['current_lang'] ? "current_lang" : ""; ?>"><strong>PT</strong></a>
                         |
-                        <a href="<?= $translations['es']['url'] ?>" class="ES <?php $translations['es']['current_lang'] ? "current_lang" : ""; ?>"><strong>ES</strong></a>
+                        <a href="<?= $translations['es']['url'] ?>" class="ES <?php echo $translations['es']['current_lang'] ? "current_lang" : ""; ?>"><strong>ES</strong></a>
                     </div>
                 </div>
                 <div class="menu-header">
