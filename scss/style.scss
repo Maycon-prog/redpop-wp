@@ -155,7 +155,10 @@ label {
 #logo-contraste {
     display: none;
 }
-#logo, #logo-contraste > img{
+#logo-contraste > img{
+    width: 160px;
+}
+#logo > img{
     width: 160px;
 }
 
