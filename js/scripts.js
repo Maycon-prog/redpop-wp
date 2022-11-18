@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if(sessionStorage.getItem('tema') == 'escuro') {
         document.getElementById('pagina').classList.add("dark-mode");
+        document.getElementById('logo').style.display = 'none';
+        document.getElementById('logo-contraste').style.display = 'block';
     }
 
     if(sessionStorage.getItem('fonte') == 'aumentada') {
@@ -21,10 +23,14 @@ function contraste() {
     if(document.getElementById('pagina').className.includes("dark-mode")){
         document.getElementById('pagina').classList.remove("dark-mode");
         document.getElementById('pagina').classList.add("light-mode");
+        document.getElementById('logo-contraste').style.display = 'none';
+        document.getElementById('logo').style.display = 'block';
         sessionStorage.removeItem('tema');
     } else {    
         document.getElementById('pagina').classList.add("dark-mode");
         document.getElementById('pagina').classList.remove("light-mode");
+        document.getElementById('logo').style.display = 'none';
+        document.getElementById('logo-contraste').style.display = 'block';
         sessionStorage.setItem('tema', 'escuro');
     }
 }
