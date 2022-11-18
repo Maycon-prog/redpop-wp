@@ -162,6 +162,11 @@ label {
     width: 160px;
 }
 
+.current_lang {
+    color: var(--hover) !important;
+    text-decoration: underline !important;
+}
+
 header {
     width: 100%;
     background-color: var(--fundo);
