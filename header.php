@@ -36,8 +36,8 @@
                     </div>
                 </div>
                 <div class="menu-header">
-                    <a id="logo" href="<?php echo get_home_url(); ?>"><img src="http://3.238.63.158/wp-content/uploads/2022/11/logo-redpop2023.png"></a>
-                    <a id="logo-contraste" href="<?php echo get_home_url(); ?>" ><img src="http://3.238.63.158/wp-content/uploads/2022/11/logo-redpop2023-contraste.png"></a>
+                    <a id="logo" href="<?php echo get_home_url()."/".pll_current_language('slug'); ?>"><img src="http://3.238.63.158/wp-content/uploads/2022/11/logo-redpop2023.png"></a>
+                    <a id="logo-contraste" href="<?php echo get_home_url()."/".pll_current_language('slug'); ?>" ><img src="http://3.238.63.158/wp-content/uploads/2022/11/logo-redpop2023-contraste.png"></a>
                     <button onclick="button_menu('open');" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
