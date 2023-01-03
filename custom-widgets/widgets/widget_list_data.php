@@ -52,7 +52,7 @@ class widget_list_data extends Widget_Base
             'list_event',
             [
                 'label' => esc_html__('Evento', 'elementor'),
-                'type' => \Elementor\Controls_Manager::WYSIWYG,
+                'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => esc_html__('Evento nessa data', 'elementor'),
                 'show_label' => false,
             ]
@@ -94,7 +94,7 @@ class widget_list_data extends Widget_Base
             $data = date('d.m.Y', strtotime($dados['list_date']));
             $evento = $dados['list_event'];
             ?>
-            <p class="list texto"><b><?=$data?></b> - <?=$evento?></p>
+            <p class="list texto"><b><?=$data?></b> - <span><?=$evento?></span></p>
             <hr class="hr-list">
             <?php
         }
