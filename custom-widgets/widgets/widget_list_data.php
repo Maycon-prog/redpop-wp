@@ -54,7 +54,7 @@ class widget_list_data extends Widget_Base
                 'label' => esc_html__('Evento', 'elementor'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => esc_html__('Evento nessa data', 'elementor'),
-                'show_label' => false,
+                'show_label' => true,
             ]
         );
 
@@ -67,7 +67,7 @@ class widget_list_data extends Widget_Base
                 'default' => [
                     [
                         'list_date' => esc_html__('01-01-23 12:00', 'elementor'),
-                        'list_event' => esc_html__('Evento nesta data', 'elementor'),
+                        'list_event' => esc_html__('Evento nesta data'),
                     ],
                     [
                         'list_date' => esc_html__('01-01-23 12:00', 'elementor'),
