@@ -67,7 +67,7 @@ class widget_list_data extends Widget_Base
                 'default' => [
                     [
                         'list_date' => esc_html__('01-01-23 12:00', 'elementor'),
-                        'list_event' => esc_html__('Evento nesta data'),
+                        'list_event' => esc_html__('Evento nesta data', 'elementor'),
                     ],
                     [
                         'list_date' => esc_html__('01-01-23 12:00', 'elementor'),
